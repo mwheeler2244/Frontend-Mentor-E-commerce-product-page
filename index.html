@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Dancing+Script:wght@400..700&family=Kumbh+Sans:wght@100..900&family=League+Spartan:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | E-commerce product page</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <nav class="nav__bar">
+          <div class="mobil__nav-open">
+            <img src="./images/icon-menu.svg" alt="" />
+          </div>
+
+          <div class="logo">
+            <img src="./images/logo.svg" alt="" />
+          </div>
+
+          <ul class="nav__links">
+            <div class="mobil__nav-close">
+              <img src="./images/icon-close.svg" alt="" />
+            </div>
+            <li><a href="">Collections</a></li>
+            <li><a href="">Men</a></li>
+            <li><a href="">Women</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+          <div class="nav__cart">
+            <div class="cart__container">
+              <span class="cart-count" aria-live="polite">0</span>
+              <img class="cart" src="./images/icon-cart.svg" alt="" />
+            </div>
+            <div class="cart-dropdown">
+              <div class="dropdown__cart">
+                <p class="title-border">Cart</p>
+
+                <div class="cart-item">
+                  <img
+                    class="cart-item-image"
+                    src="./images/image-product-1-thumbnail.jpg"
+                    alt="Sneaker"
+                  />
+
+                  <div class="cart-item-details">
+                    <div class="cart-title">
+                      <p class="cart-item-name">
+                        Fall Limited Edition Sneakers
+                      </p>
+                    </div>
+
+                    <div class="cart-sub-title">
+                      <p class="cart-item-quantity">Quantity: 1</p>
+                      <p class="cart-item-price">$125.00</p>
+                    </div>
+                  </div>
+                  <img
+                    class="trash"
+                    src="./images/icon-delete.svg"
+                    alt="Remove item"
+                  />
+                </div>
+
+                <button class="button__checkout">Checkout</button>
+              </div>
+            </div>
+
+            <img class="avatar" src="./images/image-avatar.png" alt="" />
+          </div>
+        </nav>
+      </header>
+
+      <section class="home">
+        <div class="container">
+          <div class="col">
+            <div class="main__image-container">
+              <img
+                class="main-image"
+                src="./images/image-product-1.jpg"
+                alt=""
+              />
+              <div class="previous arrow">
+                <img src="./images/icon-previous.svg" alt="" />
+              </div>
+              <div class="next arrow">
+                <img src="./images/icon-next.svg" alt="" />
+              </div>
+            </div>
+            <div class="small__img">
+              <img
+                class="thumbnail"
+                src="./images/image-product-1-thumbnail.jpg"
+                alt=""
+              />
+              <img
+                class="thumbnail"
+                src="./images/image-product-2-thumbnail.jpg"
+                alt=""
+              />
+              <img
+                class="thumbnail"
+                src="./images/image-product-3-thumbnail.jpg"
+                alt=""
+              />
+              <img
+                class="thumbnail"
+                src="./images/image-product-4-thumbnail.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col">
+            <h2>SNEAKER COMPANY</h2>
+            <h1>Fall Limited Edition Sneakers</h1>
+            <p>
+              These low-profile sneakers are your perfect casual wear companion.
+              Featuring a durable rubber outer sole, they’ll withstand
+              everything the weather can offer.
+            </p>
+
+            <div class="new__price">
+              <span>$125.00</span>
+              <span>50% </span>
+            </div>
+            <div class="previous__price">
+              <span>$250.00 </span>
+            </div>
+
+            <div class="box__cart">
+              <div class="btn__quantity">
+                <button class="btn minus" id="minus">
+                  <img src="./images/icon-minus.svg" alt="" />
+                </button>
+                <span id="quantity">0</span>
+                <button class="btn plus" id="plus">
+                  <img src="./images/icon-plus.svg" alt="" />
+                </button>
+              </div>
+              <button class="btn__cart add-to-cart">
+                <img class="cart" src="./images/icon-cart.svg" alt="" />
+                <span>Add to cart</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
