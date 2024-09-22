@@ -192,7 +192,7 @@ cartIcon.addEventListener("click", () => {
   button.classList.toggle("active");
 });
 
- Close the dropdown if the user clicks outside of it
+ //Close the dropdown if the user clicks outside of it
  document.addEventListener("click", (event) => {
    const cartDropdown = document.querySelector(".cart-dropdown");
   if (
