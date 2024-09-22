@@ -192,13 +192,13 @@ cartIcon.addEventListener("click", () => {
   button.classList.toggle("active");
 });
 
-// Close the dropdown if the user clicks outside of it
-// document.addEventListener("click", (event) => {
-//   const cartDropdown = document.querySelector(".cart-dropdown");
-//   if (
-//     !cartIcon.contains(event.target) &&
-//     !cartDropdown.contains(event.target)
-//   ) {
-//     cartDropdown.classList.remove("active");
-//   }
-// });
+ Close the dropdown if the user clicks outside of it
+ document.addEventListener("click", (event) => {
+   const cartDropdown = document.querySelector(".cart-dropdown");
+  if (
+     !cartIcon.contains(event.target) &&
+    !cartDropdown.contains(event.target)
+  ) {
+     cartDropdown.classList.remove("active");
+  }
+ });
